@@ -4,28 +4,26 @@
  *
  * Return: (0)
  */
-
 int main(void)
 {
 	int i;
-	long int fibonancci[50];
+	long int fibonacci[50];
 
-	fibonancci[0] = 1;
-	fibonancci[1] = 2;
-	printf("%1d, %1d, ", fibonancci[0], fibonancci[1]);
+	fibonacci[0] = 1;
+	fibonacci[1] = 2;
+	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
 
 	for (i = 2; i < 50; i++)
 	{
-		fibonancci[i] = fibonancci[1 - 1] + fibonancci[i - 2];
+		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 		if (i == 49)
 		{
-			printf("%ld\n", fibonancci[i]);
+			printf("%ld\n", fibonacci[i]);
 		}
 		else
 		{
-			printf("%ld, ", fibonancci[i]);
+			printf("%ld, ", fibonacci[i]);
 		}
 	}
 	return (0);
 }
-
