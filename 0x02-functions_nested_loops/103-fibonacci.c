@@ -19,8 +19,7 @@ int main(void)
 		x = y;
 		y = sum;
 	}
-
-	printf("Sum of even Fibonacci numbers below 4 million: %ld\n", tsum);
+	printf("%ld\n", tsum);
 
 	return (0);
 }
