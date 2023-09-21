@@ -11,8 +11,7 @@ size_t list_len(const list_t *noe)
 {
 	size_t x = 0;
 
-	for (; noe; x++, noe = noe->next)
-	;
+	while (noe)
 	{
 		x++;
 		noe = noe->next;
